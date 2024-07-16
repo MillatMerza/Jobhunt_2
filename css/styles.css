@@ -17,6 +17,11 @@ p {
   color: var(--text-light);
   font-weight: 500;
 }
+img {
+  width: 100%; /* or max-width: 100%; */
+  height: auto;
+}
+
 * {
   font-family: "Poppins", sans-serif;
   /* padding: 0;
@@ -155,7 +160,7 @@ p {
   padding-left: 2rem;
   width: 100%;
 }
-.card--offer_content_d h4 {
+.card--offer_content_d h2 {
   font-size: 2rem;
   margin: 0;
 }
@@ -509,7 +514,7 @@ p {
   font-size: 3rem;
 }
 .section_steps {
-  background: url(/assets/steps-bg.png);
+  background: url(/assets/steps-bg.webp);
   background-attachment: fixed;
 
   padding: 2rem;
