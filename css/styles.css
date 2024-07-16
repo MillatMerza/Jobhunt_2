@@ -290,18 +290,15 @@ p {
   padding: 2rem;
   padding-top: 0;
   font-size: 1rem;
-  
 }
-.testimonials span{
+.testimonials span {
   color: var(--primary-color-dark);
 }
 .testimonials h1 {
   margin-bottom: 0;
- 
 }
 .testimonials p {
   text-align: justify;
-  
 }
 /* star */
 
@@ -330,6 +327,7 @@ p {
 
 /* footer */
 .footer {
+  align-items: baseline;
   color: var(--text-dark);
   display: flex;
   justify-content: center;
@@ -343,13 +341,14 @@ p {
 .footer_logo {
   width: 100%;
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 .footer--col {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
   width: 100%;
 }
 .footer--col .nav--link li a {
@@ -386,7 +385,6 @@ p {
   margin: 0;
 }
 .footer--col .nav--link li {
-  font-size: 2rem;
   color: var(--text-light);
   text-align: center;
 }
@@ -394,18 +392,22 @@ p {
   font-size: 2rem;
 }
 @media screen and (min-width: 768px) {
-  .footer--col .nav--link li {
+  .footer--col h1 {
     font-size: 2rem;
+  }
+  .footer--col .nav--link li a {
+    font-size: 1.5rem;
+  }
+  .footer--col .nav--link li {
     color: var(--text-light);
     text-align: center;
   }
   .footer--col .nav--link li {
     display: block;
-    
   }
   .footer {
     flex-direction: row;
-    gap: 1rem;
+    gap: 0.5rem;
   }
   .footer--col {
     display: flex;
@@ -413,7 +415,6 @@ p {
     justify-content: center;
     align-items: center;
     width: 100%;
-
   }
   .nav--link ul {
     padding: 0;
