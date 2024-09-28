@@ -28,6 +28,7 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
     <title>JobHunt</title>
   </head>
   <body >
@@ -36,7 +37,7 @@
         <div class="logo">
           <div>
             <a href="/">
-              <h1 class="text-gradient">JobHunt</h1>
+              <h1 class="text-gradient">Aizen</h1>
             </a>
           </div>
           
@@ -49,226 +50,114 @@
           <ul>
             <li><a href="#">Home</a></li>
             <li><a href="#">about</a></li>
-            <li><a href="#">Jobs</a></li>
+            <li><a href="#">3D Models</a></li>
             <li><a href="#">Servicec</a></li>
             <li><a href="#">Client</a></li>
         
           </ul>
-          <button class="btn">Register</button>
+          <button class="btn">Conect us</button>
         </div>
       </div>
     </div>
-    <div class="section  "  >
-        <div class="card--head small_image" >
-            <div class="icon">
-              <img class="card_image" src="/assets/figma.webp" alt="" />
-            </div>
-          </div>
-          <div class="card--head small_image">
-            <div class="icon">
-              <img class="card_image" src="/assets/amazon.webp" alt="" />
-            </div>
-          </div>
-          <div class="card--head small_image" >
-            <div class="icon">
-              <img class="card_image" src="/assets/google.webp" alt="" />
-            </div>
-          </div>
-          <div class="card--head small_image" >
-            <div class="icon">
-              <img class="card_image" src="/assets/linkedin.webp" alt="" />
-            </div>
-          </div>
-          <div class="card--head small_image">
-            <div class="icon">
-              <img class="card_image" src="/assets//microsoft.webp" alt="" />
-            </div>
-          </div>
-          <div class="card--head small_image">
-            <div class="icon">
-              <img class="card_image" src="/assets/twitter.png" alt="" />
-            </div>
-          </div>
-          <div class="card--footer top-bag" data-aos="fade-down">
-            <p class="info"> <img src="/assets/bag.webp" alt="">No.1 Job Hunt Website</p>
-            
-          </div>
+    
+    <div class="new_section section">
+    
+    <div class="section section_left_iphone "  >
+
       <div class="headers" data-aos="fade-up" data-aos-once="true" data-aos-once="false">
         <div class="header-title">
-          <h1>Search, Apply & Get Your <span>Dream Job</span></h1>
+          <h1>Scan,View  <span>&</span> Experience Products in <span>3D</span></h1>
         </div>
         <div class="header-info">
           <p >
-            Your future starts here. Discover countless opportunities, take
-            action by applying to jobs that match your skills and aspirations,
-            and transform your career.
+           Seamlessly explore products in interactive 3D using QR codes. Whether you're at a restaurant, store,
+            or online, view items as if they were in front of you.
           </p>
         </div>
       </div>
       <div class="two-btn" data-aos="fade-up" data-aos-once="true" data-aos-once="false">
-        <button class="btn">Browse Jobs</button>
-        <div class="btn-circle">
-         <button class="btn "><span>&#62;</span></i></button>
-        <p>How it works?</p>
+        <!-- <button class="btn try_btn" >Try It Out!   <i class="fa-brands fa-unity fa-lg"></i></button> -->
+        <!-- Label styled as a button to trigger the camera -->
+  <label class="btn try_btn" for="cameraInput">Try It Out! <i class="fa-brands fa-unity fa-lg"></i></label>
+
+  <!-- Hidden file input that will open the native camera -->
+  <input type="file" accept="image/*" capture="camera" id="cameraInput" style="display:none;">
+
         
         </div>
       </div>
+      
+        <video data-aos="fade-left" data-aos-once="true" data-aos-once="false"src="/assets/iphone.mp4" autoplay="aut"></video>
+      
     </div>
-    <div class="section steps" >
+  
+    <div class="section steps section" >
+        
         <div class="headers" data-aos="fade-up" data-aos-once="true" data-aos-once="false">
             <div class="header-title">
-              <h1 class="small-headers">Get Hired in 4<span> Quick Easy Steps</span></h1>
+              <h1 class="small-headers">Experience 3D in 4<span> Easy Steps</span></h1>
             </div>
             <div class="header-info">
               <p>
-                Follow Our Simple, Step-by-Step Guide to Quickly Land Your Dream Job and Start Your New Career Journey.
-              </p>
+               Follow these steps to access and interact with products in a fully immersive 3D experience.</p>
             </div>
           </div>
           <div class="section_steps" data-aos="fade-up" data-aos-once="true" data-aos-once="false">
                <div class="cul1">
                 <div class="card">
                     <div class="icon">
-                        <i class="fa-solid fa-user-plus fa-2xl"></i>
+                        <!-- <i class="fa-solid fa-user-plus fa-2xl"></i> -->
+                        <i class="fa-solid fa-qrcode fa-2xl"></i>
                     </div>
-                    <h1>Create an account</h1>
+
+                    <h1>Scan a QR Code</h1>
                     <p>
-                      Sign up with just a few clicks to unlock exclusive access to a world of
-                      job opportunities and landing your dream job. It's quick, easy, and
-                      completely free.
+                     Use your smartphone or device to scan the unique QR code for any product you want to explore.
                     </p>
                   </div>
                   <div class="card">
                     <div class="icon">
-                        <i class="fa-solid fa-magnifying-glass fa-2xl"></i>
+                        <!-- <i class="fa-solid fa-magnifying-glass fa-2xl"></i> -->
+                        <i class="fa-brands fa-unity fa-2xl"></i>
                     </div>
-                    <h1>Create an account</h1>
+                    <h1>View the 3D Model</h1>
                     <p>
-                      Sign up with just a few clicks to unlock exclusive access to a world of
-                      job opportunities and landing your dream job. It's quick, easy, and
-                      completely free.
+                     Get instant access to the 3D model, rotating,
+                      zooming, and inspecting the product in real-time.
                     </p>
                   </div>
-              
+               <div class="card">
+                    <div class="icon">
+                        <!-- <i class="fa-solid fa-briefcase fa-2xl"></i> -->
+                       <i class="fa-solid fa-vr-cardboard fa-2xl"></i>
+                    </div>
+                    <h1>Explore in AR </h1>
+                    <p>
+                      Bring the product into your real-world environment
+                       with augmented reality using AR Quick Look or WebXR.
+                    </p>
+                  </div>
                 <div class="card">
                     <div class="icon">
-                        <i class="fa-solid fa-file-circle-check fa-2xl"></i>
+                        <!-- <i class="fa-solid fa-file-circle-check fa-2xl"></i> -->
+                         <i class="fa-solid fa-eye fa-2xl"></i>
                     </div>
-                    <h1>Create an account</h1>
+                    <h1>Interact and Customize</h1>
                     <p>
-                      Sign up with just a few clicks to unlock exclusive access to a world of
-                      job opportunities and landing your dream job. It's quick, easy, and
-                      completely free.
+                     Engage with the 3D model, view details,
+                      and make choices like colors or product variations if available.
                     </p>
                   </div>
-                  <div class="card">
-                    <div class="icon">
-                        <i class="fa-solid fa-briefcase fa-2xl"></i>
-                    </div>
-                    <h1>Create an account</h1>
-                    <p>
-                      Sign up with just a few clicks to unlock exclusive access to a world of
-                      job opportunities and landing your dream job. It's quick, easy, and
-                      completely free.
-                    </p>
-                  </div>
+                 <img id="svg" src="assets/wave.svg" alt="" >
                </div>
           </div>
-    </div>
-    <div class="section" >
-        <div class="headers" data-aos="fade-up" data-aos-once="true" data-aos-once="false">
-          <div class="header-title">
-            <h1 class="small-headers">
-              <span> Countless Career Options </span> Are Waiting For You To Explore
-            </h1>
-          </div>
-          <div class="header-info">
-            <p>
-              Discover a World of Exciting Opportunities and Endless Possibilities,
-              and Find the Perfect Career Path to Shape Your Future.
-            </p>
-          </div>
-        </div>
-        <div class="line_header" data-aos="fade-up" data-aos-once="true" data-aos-once="false">
-          <div class="line">
-            <div class="card">
-              <div class="icon iconan2">
-                <i class="fa-solid fa-pen-nib fa-2xl"></i>
-              </div>
-              <h1>design</h1>
-              <p>200+ jobs openings</p>
-            </div>
-      
-            <div class="card">
-              <div class="icon iconan1">
-                <i class="fa-solid fa-money-bill-trend-up fa-2xl"></i>
-              </div>
-              <h1>Sales</h1>
-              <p>350+ jobs openings</p>
-            </div>
-          </div>
-          <div class="line">
-            <div class="card">
-              <div class="icon iconan3">
-                <i class="fa-solid fa-chart-simple fa-2xl"></i>
-              </div>
-              <h1>Marketing</h1>
-              <p>500+ jobs openings</p>
-            </div>
-      
-            <div class="card">
-              <div class="icon iconan4">
-                <i class="fa-solid fa-coins fa-2xl"></i>
-              </div>
-              <h1>Finance</h1>
-              <p>200+ jobs openings</p>
-            </div>
-          </div>
-        </div>
-        <div class="line_header" data-aos="fade-up" data-aos-once="true" data-aos-once="false">
-          <div class="line">
-            <div class="card">
-              <div class="icon iconan5">
-                <i class="fa-solid fa-car fa-2xl"></i>
-              </div>
-              <h1>Automobile</h1>
-              <p>250+ jobs openings</p>
-            </div>
-      
-            <div class="card">
-              <div class="icon iconan6">
-                <i class="fa-solid fa-truck fa-2xl"></i>
-              </div>
-              <h1>Logistics / Delivery</h1>
-              <p>1k+ jobs openings</p>
-            </div>
-          </div>
-          <div class="line">
-            <div class="card">
-              <div class="icon iconan7">
-                <i class="fa-solid fa-user-tie fa-2xl"></i>
-              </div>
-              <h1>Admin</h1>
-              <p>100+ jobs openings</p>
-            </div>
-      
-            <div class="card">
-              <div class="icon iconan8">
-                <i class="fa-solid fa-person-digging fa-2xl"></i>
-              </div>
-              <h1>Construction</h1>
-              <p>500+ jobs openings</p>
-            </div>
-          </div>
-        </div>
-        <button class="btn btn_cat">View All Categories</button>
-      </div>
-     
+   
+   
       <div class="section">
         <div class="headers" data-aos="fade-up" data-aos-once="true" data-aos-once="false">
             <div class="header-title">
               <h1 class="small-headers">
-                <span> Latest & Top </span> Job Openings
+               Examples of <span>   Our Work</span>
               </h1>
             </div>
             <div class="header-info">
@@ -431,8 +320,7 @@
             </div>
             <div class="header-info">
               <p>
-                Explore the Benefits and Services We Provide
-                 to Enhance Your Job Search and Career Success </p>
+               Enhance your experience with our advanced 3D and AR solutions:</p>
             </div>
           </div>
           <div class="offer" data-aos="fade-up" data-aos-once="true" data-aos-once="false">
@@ -443,8 +331,8 @@
                 <div class="card--offer_content">
                   <span>01</span>
                   <div class="card--offer_content_d">
-                    <h2>Job Recommendation</h2>
-                    <p>Personalized job matches tailored to your skills and preferences</p>
+                    <h2>Custom QR Codes</h2>
+                    <p>Every product gets a unique QR code that links directly to its 3D model.</p>
                   </div>
                 </div>
               </div>
@@ -455,8 +343,8 @@
                 <div class="card--offer_content">
                   <span>02</span>
                   <div class="card--offer_content_d">
-                    <h2>Create & Build Portfolio</h2>
-                    <p>Showcase your expertise with professional portfolio design</p>
+                    <h2>3D Model Hosting</h2>
+                    <p>Host and showcase your 3D models with fast loading times and high quality.</p>
                   </div>
                 </div>
               </div>
@@ -467,8 +355,8 @@
                 <div class="card--offer_content">
                   <span>03</span>
                   <div class="card--offer_content_d">
-                    <h2>Career Consultation</h2>
-                    <p>Receive expert advice to navigate your career path</p>
+                    <h2>Augmented Reality</h2>
+                    <p>Bring products into the real world with our AR support for mobile devices.</p>
                   </div>
                 </div>
               </div>
@@ -486,20 +374,19 @@
             </div>
             <div class="header-info">
               <p>
-                Read Testimonials and Success Stories from Our Satisfied Job Seekers and Employers
-                 to See How We Make a Difference</p>
+               Here are some success stories
+                from satisfied businesses using Aizen System:</p>
             </div>
           </div>
           <div class="clients offer" data-aos="fade-up" data-aos-once="true" data-aos-once="false">
             <div class="testimonials">
                 <img src="/assets/people_1.webp" alt="" />
                 <div class="testimonials_content">
-                  <h1>David smith</h1>
-                  <span>Software Enginneer</span>
+                  <h1>Ramadan Moaaz </h1>
+                  <span>Interior Designer</span>
                   <p>
-                    Sign up with just a few clicks to unlock exclusive access to a world of
-                    job opportunities and landing your dream job. It's quick, easy, and
-                    completely free.
+                    "Aizen System helped me showcase furniture designs in 3D, allowing clients to visualize them 
+                    in their homes. The AR feature is a game-changer!"
                   </p>
                   <p class="star-rating">
                     <i class="my-star star-1" data-star="1"></i>
@@ -514,11 +401,11 @@
               <div class="testimonials">
                 <img src="/assets/people_2.webp" alt="" />
                 <div class="testimonials_content">
-                  <h1>Jane Doe</h1>
-                  <span>Data Scientist</span>
+                  <h1>Ava Jasim</h1>
+                  <span>Restaurant Owner</span>
                   <p>
-                    Signing up opened doors to countless job opportunities. The process was
-                    straightforward and user-friendly. Highly recommend!
+                   "Our customers love seeing menu items in 3D before they order. It's an innovative and
+                    interactive way to improve their dining experience."
                   </p>
                   <p class="star-rating">
                     <i class="my-star star-1" data-star="1"></i>
@@ -532,11 +419,10 @@
               <div class="testimonials">
                 <img src="/assets/people_3.webp" alt="" />
                 <div class="testimonials_content">
-                  <h1>John Miller</h1>
-                  <span>UX Designer</span>
+                  <h1>Sidad Naji</h1>
+                  <span>Fashion Retailer</span>
                   <p>
-                    The platform made finding my ideal job seamless and efficient. The best
-                    part? It was entirely free and incredibly easy to navigate.
+                   "The platform made it easy for shoppers to engage with our products online. 3D viewing has improved our sales and customer satisfaction."
                   </p>
                   <p class="star-rating">
                     <i class="my-star star-1" data-star="1"></i>
@@ -548,22 +434,22 @@
                 </div>
               </div>
               
-              
-
+           
     
               
           </div>
+           
       </div>
+      
         <div class="section section_footer" data-aos="fade-up" data-aos-once="true" data-aos-once="false">
             <div class="footer">
                 <div class="logo footer_logo">
                   <div>
                     <a href="/">
-                      <h1 class="text-gradient">Job<span>Hunt</span></h1>
+                      <h1 class="text-gradient">Ai<span>zen</span></h1>
                     </a>
                     <p>
-                      Our platform is designed to help you find the perfect job and achieve
-                      your professional dreams.
+                      Revolutionizing how you experience products with 3D and AR.
                     </p>
                   </div>
                 </div>
@@ -595,7 +481,7 @@
                   <h1>Contact us</h1>
                   <div class="nav--link menu">
                     <ul>
-                      <li><a href="#">+912 234 234 </a></li>
+                      <li><a href="#">+964 751 7327932 </a></li>
                       <li><a href="#">4001 nzarke,duhok,kurdistan</a></li>
                     </ul>
                   </div>
@@ -605,7 +491,7 @@
       
 
        <div class="section section_copy" >
-         <p id="Copyright"> Copyright © 2024 Web Design Mastery. All rights reserved.</p>
+         <p id="Copyright"> Copyright © Aizen. All rights reserved.</p>
          
        </div>
     
