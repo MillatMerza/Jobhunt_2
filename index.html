@@ -77,13 +77,11 @@
       </div>
       <div class="two-btn" data-aos="fade-up" data-aos-once="true" data-aos-once="false">
         <!-- <button class="btn try_btn" >Try It Out!   <i class="fa-brands fa-unity fa-lg"></i></button> -->
-        <!-- Label styled as a button to trigger the camera -->
-  <label class="btn try_btn" for="cameraInput">Try It Out! <i class="fa-brands fa-unity fa-lg"></i></label>
+     <!-- The Button to trigger the camera -->
+  <button class="btn" id="start-camera-btn">Try It Out! <i class="fa-brands fa-unity fa-lg"></i></button>
 
-  <!-- Hidden file input that will open the native camera -->
-  <input type="file" accept="image/*" capture="camera" id="cameraInput" style="display:none;">
-
-        
+  <!-- Video element to display the camera feed -->
+  <video id="camera" autoplay playsinline></video>
         </div>
       </div>
       
