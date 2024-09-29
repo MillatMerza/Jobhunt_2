@@ -45,6 +45,11 @@ img {
   margin: auto;
   padding: 5rem 1rem;
 }
+.section_ajesment {
+  padding-right: 0px;
+  padding-left: 0px;
+  max-width: 95%;
+}
 /* button */
 .btn {
   color: var(--white);
@@ -284,7 +289,7 @@ img {
 
 /* testimonials */
 .testimonials {
-  width: 35rem;
+  width: 100%;
   color: var(--text-dark);
 
   display: flex;
@@ -516,16 +521,7 @@ img {
 .section .small-headers {
   font-size: 3rem;
 }
-/* .section_steps {
-  background: url(/assets/steps-bg.webp);
-  background-attachment: fixed;
 
-  padding: 2rem;
-
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-} */
 .cul1 {
   margin-top: 2rem;
   display: flex;
@@ -556,14 +552,14 @@ img {
     position: relative;
     top: 4rem;
   }
- 
 }
 
 @media screen and (max-width: 1100px) {
   .cul1 {
     flex-direction: row;
     flex-wrap: wrap;
-    max-width: 60rem;
+    max-width: 70rem;
+
     text-align: center;
   }
 }
@@ -577,15 +573,12 @@ img {
   .cul1 div {
     margin: 1.5rem;
   }
-   .cul1 .card {
-   
-       display: flex;
+  .cul1 .card {
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
   }
- 
 }
 /* section 3 Career */
 .line_header {
@@ -705,7 +698,7 @@ img {
 
 /* offer */
 .offer {
-  margin: 3rem;
+  margin: 0;
 }
 @media screen and (min-width: 768px) {
   .card--offer_content_d {
@@ -741,6 +734,10 @@ img {
   margin-bottom: 1.5rem;
 }
 
+.clients {
+  margin: 1rem 0;
+  max-width: 95%;
+}
 #copyright {
   margin: 0;
   font-size: 3rem;
@@ -791,6 +788,13 @@ video {
   text-align: left;
   padding-left: 0;
 }
+
+@media screen and (min-width: 768px) and (max-width: 900px) {
+  .section_left_iphone {
+    margin-right: 0;
+  }
+}
+
 .try_btn {
   width: 18rem;
   height: 6rem;
@@ -798,7 +802,7 @@ video {
   margin: 1rem;
   position: relative;
   top: 5rem;
-  left: 20rem;
+  left: 15rem;
 }
 button .fa-unity {
   padding-left: 1rem;
@@ -838,7 +842,97 @@ button .fa-unity {
     top: 0rem;
     left: 0rem;
   }
+}
+@media screen and (max-width: 1240px) {
   #svg {
     display: none;
   }
+}
+
+/* QR Code scanner */
+
+.QrWindow {
+  position: absolute;
+  left: 35%;
+  top: 22%;
+  align-items: center;
+  justify-content: center;
+  background-color: #3a43c2;
+  width: 40rem;
+  height: 50rem;
+  border-radius: 1.5rem;
+  /* display: none; */
+}
+@media (max-width: 769px) {
+  .QrWindow {
+    background-color: #3a43c2;
+    max-width: var(--max-width);
+    left: auto;
+    top: auto;
+
+    width: 30rem;
+    height: 40rem;
+  }
+}
+/* pop up windo? */
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup-content {
+  
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+}
+
+#reader {
+  width: 100%;
+  aspect-ratio: 1;
+  border: 2px solid #6a38c2;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fafafa;
+}
+
+#result {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+.close-btn {
+  background-color: #6a38c2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-top: .5rem;
+  width: 10rem;
+  height: 4rem;
+  letter-spacing: .3rem;
+  font-size: 1.7rem;
+  
+  
+}
+
+.close-btn:hover {
+  background-color: #4e2c9f;
 }

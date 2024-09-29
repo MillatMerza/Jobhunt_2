@@ -27,6 +27,7 @@
       src="https://kit.fontawesome.com/90995a6060.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5-qrcode/2.3.4/html5-qrcode.min.js" integrity="sha512-k/KAe4Yff9EUdYI5/IAHlwUswqeipP+Cp5qnrsUjTPCgl51La2/JhyyjNciztD7mWNKLSXci48m7cctATKfLlQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
     <title>JobHunt</title>
@@ -76,8 +77,20 @@
         </div>
       </div>
       <div class="two-btn" data-aos="fade-up" data-aos-once="true" data-aos-once="false">
-        <button class="btn try_btn" >Try It Out!   <i class="fa-brands fa-unity fa-lg"></i></button>
        
+    <!-- Your existing layout code here -->
+
+    <button class="btn try_btn" id="startQRButton">Try It Out! <i class="fa-brands fa-unity fa-lg"></i></button>
+
+    <!-- Scanner Popup Window -->
+    <div class="popup" id="popup">
+        <div class="popup-content">
+            <h2>Scan QR Code</h2>
+            <div id="reader"></div>
+            <button class="close-btn" id="closeBtn">Close</button>
+        </div>
+    </div>
+  
         </div>
       </div>
       
@@ -305,7 +318,7 @@
               
           </div>
       </div>
-      <div class="section">
+      <div class="section section_ajesment">
         <div class="headers" data-aos="fade-up" data-aos-once="true" data-aos-once="false">
             <div class="header-title">
               <h1 class="small-headers">
@@ -359,7 +372,7 @@
               
           </div>
       </div>
-      <div class="section">
+      <div class="section ">
         <div class="headers" data-aos="fade-up" data-aos-once="true" data-aos-once="false">
             <div class="header-title">
               <h1 class="small-headers">
