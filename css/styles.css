@@ -857,25 +857,21 @@ button .fa-unity {
   top: 22%;
   align-items: center;
   justify-content: center;
-  
+
   outline: none;
   border-radius: 1.5rem;
   /* display: none; */
 }
-.QrWindow img{
+.QrWindow img {
   display: none;
 }
-main{
+main {
   outline: n;
 }
 @media (max-width: 769px) {
   .QrWindow {
-     
-    
     left: auto;
     top: auto;
-
-    
   }
 }
 main {
@@ -887,9 +883,12 @@ main {
 }
 
 #reader {
-  width: 250;
-  height: 250;
-  border: none;
+  max-width: 35rem;
+  max-height: 35rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 #result {
   text-align: center;
