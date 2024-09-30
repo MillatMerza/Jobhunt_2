@@ -857,7 +857,8 @@ button .fa-unity {
   top: 22%;
   align-items: center;
   justify-content: center;
-
+  width: 35rem;
+  height: 35rem;
   outline: none;
   border-radius: 1.5rem;
   /* display: none; */
@@ -883,8 +884,8 @@ main {
 }
 
 #reader {
-  max-width: 35rem;
-  max-height: 35rem;
+  width: 35rem;
+  height: 35rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
