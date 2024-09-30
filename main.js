@@ -25,7 +25,7 @@ function openPopup() {
   html5QrCode.start(
     { facingMode: "environment" }, // Use the environment-facing camera
     {
-      fps: 10,  // Frames per second for scanning
+      fps: 20,  // Frames per second for scanning
       qrbox: { width: 250, height: 250 }  // Define the size of the QR scanning box
     },
     success,  // Success callback when QR code is scanned
