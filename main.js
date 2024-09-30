@@ -10,7 +10,7 @@ const qrScanner = new Html5QrcodeScanner("qrCodeReader", {
     height: 250,
   },
   fps: 20,
-  rememberLastUsedCamera: true,
+  // rememberLastUsedCamera: true,
 });
 
 const popup = document.querySelector(".QrWindow");
