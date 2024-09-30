@@ -857,22 +857,43 @@ button .fa-unity {
   top: 22%;
   align-items: center;
   justify-content: center;
-  background-color: #3a43c2;
-  width: 40rem;
-  height: 50rem;
+  
+  outline: none;
   border-radius: 1.5rem;
   /* display: none; */
 }
+.QrWindow img{
+  display: none;
+}
+main{
+  outline: n;
+}
 @media (max-width: 769px) {
   .QrWindow {
-    background-color: #3a43c2;
-    max-width: var(--max-width);
+     
+    
     left: auto;
     top: auto;
 
-    width: 30rem;
-    height: 40rem;
+    
   }
+}
+main {
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+}
+
+#reader {
+  width: 250;
+  height: 250;
+  border: none;
+}
+#result {
+  text-align: center;
+  font-size: 1.5rem;
 }
 /* pop up windo? */
 /* .QrWindow {
@@ -922,10 +943,10 @@ button .fa-unity {
   margin-top: 10px;
   color: #6a38c2;
 } */
-  /* Only apply styles to the popup and scanner to avoid affecting your existing layout */
+/* Only apply styles to the popup and scanner to avoid affecting your existing layout */
 
-        /* Popup styles */
-        .popup {
+/* Popup styles */
+/* .popup {
             display: none;
             position: fixed;
             top: 0;
@@ -977,4 +998,4 @@ button .fa-unity {
 
         .close-btn:hover {
             background-color: #4e2c9f;
-        }
+        } */

@@ -3,78 +3,33 @@ document.getElementById("icon").addEventListener("click", function () {
   document.getElementById("icon-color").classList.toggle("menu--icon");
 });
 
-// QR Code scanner instance
-// const qrScanner = new Html5QrcodeScanner("qrCodeReader", {
-//   qrbox: {
-//     width: 250,
-//     height: 250,
-//   },
-//   fps: 20,
-//   // rememberLastUsedCamera: true,
-// });
+const scanner = new Html5QrcodeScanner("reader", {
+  // Scanner will be initialized in DOM inside element with id of 'reader'
+  qrbox: {
+    width: 250,
+    height: 250,
+  }, // Sets dimensions of scanning box (set relative to reader element width)
+  fps: 20, // Frames per second to attempt a scan
+});
 
-// const popup = document.querySelector(".QrWindow");
-// const startButton = document.getElementById("startQRButton");
-// const closeButton = document.getElementById("closePopup");
+scanner.render(success, error);
+// Starts scanner
 
-// startButton.onclick = function () {
-//   popup.style.display = "flex";
-//   qrScanner.render(scanSuccess, scanError);
-// };
+function success(result) {
+  document.getElementById("result").innerHTML = `
+        <h2>Success!</h2>
+        <p><a href="${result}">${result}</a></p>
+        `;
+  // Prints result as a link inside result element
 
-// closeButton.onclick = function () {
-//   popup.style.display = "none";
-//   qrScanner.clear();
-// };
+  scanner.clear();
+  // Clears scanning instance
 
-// function scanSuccess(result) {
-//   document.getElementById("scanResult").innerHTML = `
-//             <p>Scanned: <a href="${result}" target="_blank">${result}</a></p>
-//             `;
-// }
+  document.getElementById("reader").remove();
+  // Removes reader element from DOM since no longer needed
+}
 
-// function scanError(err) {
-//   console.error(err);
-// }
-  const scanner = new Html5QrcodeScanner("reader", {
-    qrbox: {
-      width: 250,
-      height: 250,
-    },
-    fps: 20,
-    rememberLastUsedCamera: true,
-  });
-
-  document
-    .getElementById("startQRButton")
-    .addEventListener("click", function () {
-      openPopup();
-    });
-
-  document.getElementById("closeBtn").addEventListener("click", function () {
-    closePopup();
-  });
-
-  function openPopup() {
-    document.getElementById("popup").style.display = "flex";
-    // Start the scanner and request camera access
-    scanner.render(success, error);
-  }
-
-  function closePopup() {
-    document.getElementById("popup").style.display = "none";
-    scanner.clear(); // Stop the scanner when the popup closes
-  }
-
-  function success(result) {
-    document.getElementById("result").innerHTML = `
-            <h2>Success!</h2>
-            <p><a href="${result}" target="_blank">${result}</a></p>
-            `;
-    scanner.clear();
-    closePopup(); // Close popup after successful scan
-  }
-
-  function error(err) {
-    console.error(err);
-  }
+function error(err) {
+  console.error(err);
+  // Prints any errors to the console
+}
