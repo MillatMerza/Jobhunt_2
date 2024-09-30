@@ -77,13 +77,25 @@
         </div>
       </div>
       <div class="two-btn" data-aos="fade-up" data-aos-once="true" data-aos-once="false">
-          <button class="btn try_btn" id="startQRButton">Try It Out! <i class="fa-brands fa-unity fa-lg"></i></button>
+          <!-- <button class="btn try_btn" id="startQRButton">Try It Out! <i class="fa-brands fa-unity fa-lg"></i></button>
 
     <div class="QrWindow">
         <div class="popup-content">
             <button class="close-button" id="closePopup">&times;</button>
             <div id="qrCodeReader" class="qr-reader"></div>
             <div id="scanResult" class="output"></div>
+        </div>
+    </div> -->
+      <!-- Your existing layout code here -->
+
+    <button class="btn try_btn" id="startQRButton">Try It Out! <i class="fa-brands fa-unity fa-lg"></i></button>
+
+    <!-- Scanner Popup Window -->
+    <div class="popup" id="popup">
+        <div class="popup-content">
+            <h2>Scan QR Code</h2>
+            <div id="reader"></div>
+            <button class="close-btn" id="closeBtn">Close</button>
         </div>
     </div>
   
