@@ -10,6 +10,7 @@ const scanner = new Html5QrcodeScanner("reader", {
     height: 250,
   }, // Sets dimensions of scanning box (set relative to reader element width)
   fps: 20, // Frames per second to attempt a scan
+  rememberLastUsedCamera: true,
 });
 
 scanner.render(success, error);
